@@ -1299,7 +1299,7 @@ while True:
 						now2 = now2 + datetime.timedelta(hours = int(bossData[i][1]), minutes = int(bossData[i][5]))
 								
 					tmp_bossTime[i] = bossTime[i] = nextTime = now2
-					tmp_bossTimeString[i] = bossTimeString[i] = nextTime.strftime('%H:%M:%S')
+					tmp_bossTimeString[i] = bossTimeString[i] = nextTime.strftime('%H:%M')
 					tmp_bossDateString[i] = bossDateString[i] = nextTime.strftime('%Y-%m-%d')
 					embed = discord.Embed(
 							description= '```다음 ' + bossData[i][0] + ' ' + bossTimeString[i] + '입니다.```',
