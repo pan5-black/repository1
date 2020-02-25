@@ -1260,7 +1260,7 @@ while True:
 					else:
 						bossData[i][6] = ''
 						
-					tmp_msg = bossData[i][0] +'컷'
+					tmp_msg = bossData[i][0] +' 컷'
 					if len(hello) > len(tmp_msg) + 3 :
 						if hello.find(':') != -1 :
 							chkpos = hello.find(':')
@@ -1316,7 +1316,7 @@ while True:
 					else:
 						bossData[i][6] = ''
 						
-					tmp_msg = bossData[i][0] +'멍'
+					tmp_msg = bossData[i][0] +' 멍'
 					tmp_now = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
 
 					if len(hello) > len(tmp_msg) + 3 :
@@ -1391,7 +1391,7 @@ while True:
 					else:
 						bossData[i][6] = ''
 						
-					tmp_msg = bossData[i][0] +'예상'
+					tmp_msg = bossData[i][0] +' 예상'
 					if len(hello) > len(tmp_msg) + 3 :
 						if hello.find(':') != -1 :
 							chkpos = hello.find(':')
@@ -1448,7 +1448,7 @@ while True:
 
 				if message.content.startswith(bossData[i][0] +' 메모'):
 					
-					tmp_msg = bossData[i][0] +'메모 '
+					tmp_msg = bossData[i][0] +' 메모 '
 					
 					bossData[i][6] = hello[len(tmp_msg):]
 					await client.get_channel(channel).send('< ' + bossData[i][0] + ' [ ' + bossData[i][6] + ' ] 메모등록 완료>', tts=False)
